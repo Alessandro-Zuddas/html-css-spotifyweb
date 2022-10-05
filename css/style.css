@@ -27,14 +27,31 @@ header{
  PAGE CONTAINER
  --------------*/
 
+ /*---------------- Main -------------*/
+
+main{
+    width: calc(100vw - 15.625rem);
+    height: calc(100vh - 5rem);
+    background-color: blueviolet;
+}
+
+/*---------------- /Main -------------*/
+
  /*---------------- Aside -------------*/
 
 aside{
+    display: flex;
+    flex-direction: column;
     width: 15.625rem;
     height: calc(100vh - 5rem);
     padding-top: .9375rem;
     padding-left: .9375rem;
+    overflow-y: hidden;
     background-color: black;
+}
+
+aside:last-child{
+    vertical-align: bottom;
 }
 
 .logo-big-container{
@@ -113,19 +130,92 @@ nav{
 
 /* Aside Footer */
 
-/* /Aside Footer */
-
-/*---------------- /Aside -------------*/
-
-/*---------------- Main -------------*/
-
-main{
-    width: calc(100vw - 15.625rem);
-    height: calc(100vh - 5rem);
-    background-color: blueviolet;
+.aside-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 90%;
+    height: 100%;
+    color: #717171;
 }
 
-/*---------------- /Main -------------*/
+.aside-foot-icon{
+    border: .0625rem solid #717171;
+    border-radius: 1.5625rem;
+    padding: .3125rem .3125rem;
+    margin: 0 .3125rem;
+    margin-bottom: .125rem;
+}
+
+.account-container{
+    display: flex;
+    align-items: center;
+}
+
+.account-img{
+    background-color: gray;
+    border-radius: 1.5625rem;
+    margin-top: .3125rem;
+    margin-left: .25rem;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    cursor: pointer;
+}
+
+.account-name{
+    padding-top: .3125rem;
+    padding-left: .625rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* /Aside Footer */
+
+/* Responsive Mobile Aside (<= 600px) */
+
+@media screen and (max-width: 600px){
+    header{
+        left: 3.125rem; 
+    }
+
+    main{
+        width: calc(100vw - 3.125rem);
+    }
+
+    aside{
+        width: 3.125rem;
+    }
+
+    .logo-big{
+        display: none;
+    }
+
+    .logo-small-container{
+        display: block;
+        width: 80%;
+        margin-top: -1.5625rem;
+        margin-left: -0.125rem;
+    }
+
+    .nav-img{
+        margin-top: -0.1875rem;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .playlist-section{
+        display: none;
+    }
+
+    .aside-footer{
+        display: none;
+    }
+}
+
+/*---------------- /Aside -------------*/
 
  /*---------------
  /PAGE CONTAINER
@@ -136,8 +226,13 @@ main{
  --------------*/
 
 footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100vw;
     height: 5rem;
+    z-index: 100;
     /* DEBUG */
     background-color: bisque;
     /* DEBUG */
