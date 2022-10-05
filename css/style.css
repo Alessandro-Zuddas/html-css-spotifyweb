@@ -13,7 +13,7 @@ header{
     position: fixed;
     top: 0;
     right: 0;
-    left: 18.75rem;
+    left: 15.625rem;
     z-index: 100;
     height: 5rem;
     background-color: rgba(0, 0, 0, 0.5);
@@ -27,20 +27,105 @@ header{
  PAGE CONTAINER
  --------------*/
 
+ /*---------------- Aside -------------*/
+
 aside{
-    width: 18.75rem;
+    width: 15.625rem;
     height: calc(100vh - 5rem);
-    /* DEBUG */
-    background-color: aqua;
-    /* DEBUG */
+    padding-top: .9375rem;
+    padding-left: .9375rem;
+    background-color: black;
 }
 
+.logo-big-container{
+    display: block;
+    margin-bottom: 1.5625rem;
+}
+
+.logo-big{
+    width: 65%;
+}
+
+.logo-small-container{
+    display: none;
+    margin-bottom: 1.5625rem;
+}
+
+/* Navigator */
+
+nav{
+    padding-bottom: 1.5625rem;
+}
+
+.nav-links-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-img{
+    width: 1.875rem;
+    height: 1.875rem;
+    padding-right: .3125rem;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: white;
+}
+
+/* /Navigator */
+
+/* Playlist Section */
+
+.playlist-main-title{
+    color: white;
+}
+
+.new-playlist-container{
+    display: flex;
+    align-items: center;
+    margin-top: .625rem;
+    margin-bottom: 1.25rem;
+}
+
+.create-icon{
+    font-size: 1.5625rem;
+    padding: .5rem .625rem;
+    background-color: #a3a3a3;
+}
+
+.new-playlist-text{
+    color: white;
+    padding-left: .625rem;
+}
+
+.playlist-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist-name{
+    color: white;
+    padding-bottom: 1.25rem;
+}
+
+/* /Playlist Section */
+
+/* Aside Footer */
+
+/* /Aside Footer */
+
+/*---------------- /Aside -------------*/
+
+/*---------------- Main -------------*/
+
 main{
-    width: calc(100vw - 18.75rem);
+    width: calc(100vw - 15.625rem);
     height: calc(100vh - 5rem);
     background-color: blueviolet;
 }
 
+/*---------------- /Main -------------*/
 
  /*---------------
  /PAGE CONTAINER
