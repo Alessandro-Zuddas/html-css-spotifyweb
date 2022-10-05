@@ -2,7 +2,9 @@
  COMMON
  --------------*/
 
-
+.page-container{
+    display: flex;
+}
 
  /*---------------
  /COMMON
