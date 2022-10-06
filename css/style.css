@@ -32,8 +32,69 @@ header{
 main{
     width: calc(100vw - 15.625rem);
     height: calc(100vh - 5rem);
-    background-color: blueviolet;
+    background-color: #141922;
 }
+
+.main-container{
+    width: 98%;
+    margin: auto;
+    margin-top: 6.25rem;
+}
+
+/* Main Navigator */
+
+.main-nav{
+    max-width: 50%;
+    margin: auto;
+}
+
+.main-nav-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: .9375rem;
+    padding-right: 1.5625rem;
+    list-style: none;
+    color: #7d7f84;
+    cursor: pointer;
+}
+
+/* /Main Navigator */
+
+/* Recently played section */
+
+.played-main-title{
+    color: white;
+}
+
+.played-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: .9375rem;
+}
+
+.played-col{
+    width: calc(95% / 6);
+    text-align: center;
+}
+
+.played-img{
+    width: 100%;
+    display: block;
+    padding-bottom: .625rem;
+}
+
+.played-title{
+    color: white;
+    padding-bottom: .3125rem;
+}
+
+.played-text{
+    color: #7d7f84;
+}
+
+/* /Recently played section */
 
 /*---------------- /Main -------------*/
 
