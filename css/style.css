@@ -518,6 +518,26 @@ footer{
     background-color: #282828;
 }
 
+.footer-row{
+    display: flex;
+    width: 100%;
+    margin: 0 .3125rem;
+    background-color: aqua;
+    height: 4.375rem;
+}
+
+.footer-col-small{
+    width: 20%;
+    background-color: bisque;
+    height: 4.375rem;
+}
+
+.footer-col-big{
+    width: 65%;
+    background-color: violet;
+    height: 4.375rem;
+}
+
  /*---------------
  /FOOTER
  --------------*/
