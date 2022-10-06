@@ -66,6 +66,13 @@ main{
     padding-top: 1.5625rem;
 }
 
+/* Responsive Tablet Main Nav(<= 700px) */
+@media screen and (max-width: 700px) {
+    .main-nav-list{
+        padding-right: 0;
+    }
+}
+
 /* /Main Navigator */
 
 /* Recently played section */
@@ -187,7 +194,7 @@ main{
     padding-bottom: .3125rem;
 }
 
-/* Responsive Desktop Recently Played(<= 1100px) */
+/* Responsive Desktop For You (<= 1100px) */
 
 @media screen and (max-width: 1100px) {
 
@@ -205,7 +212,7 @@ main{
     }
 }
 
-/* Responsive Tablet Recently Played(<= 700px) */
+/* Responsive Tablet For You(<= 700px) */
 
 @media screen and (max-width: 700px) {
     .for-you-col{
@@ -263,7 +270,7 @@ main{
     padding-bottom: .3125rem;
 }
 
-/* Responsive Desktop Recently Played(<= 1100px) */
+/* Responsive Desktop Popular artist(<= 1100px) */
 
 @media screen and (max-width: 1100px) {
 
@@ -281,7 +288,7 @@ main{
     }
 }
 
-/* Responsive Tablet Recently Played(<= 700px) */
+/* Responsive Tablet Popular artist(<= 700px) */
 
 @media screen and (max-width: 700px) {
     .popular-col{
