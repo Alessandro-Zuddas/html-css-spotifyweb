@@ -522,20 +522,71 @@ footer{
     display: flex;
     width: 100%;
     margin: 0 .3125rem;
-    background-color: aqua;
-    height: 4.375rem;
 }
 
 .footer-col-small{
+    display: flex;
     width: 20%;
-    background-color: bisque;
-    height: 4.375rem;
 }
 
 .footer-col-big{
     width: 65%;
-    background-color: violet;
-    height: 4.375rem;
+}
+
+.current-song-preview{
+    display: flex;
+    margin-top: .75rem;
+}
+
+.current-song-img{
+   width: 3.125rem;
+   height: 3.125rem;
+}
+
+.current-song-desc{
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: .625rem;
+    padding-left: .625rem;
+}
+
+.current-song-name{
+    color: white;
+}
+
+.current-song-author{
+    color: #7d7f84;
+}
+
+.wish-playlist{
+    display: flex;
+    align-items: center;
+    margin-left: 2.5rem;
+    padding-top: .9375rem;
+    color: #7d7f84;
+}
+
+.wish-icon{
+    padding-right: .9375rem;
+}
+
+/* Responsive Tablet Popular artist(<= 700px) */
+
+@media screen and (max-width: 700px) {
+    .wish-playlist{
+        flex-direction: column;
+    }
+
+    .wish-playlist{
+        justify-content: center;
+    }
+
+    .wish-icon{
+        padding-right: 0;
+        padding-bottom: .625rem;
+    }
 }
 
  /*---------------
