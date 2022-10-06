@@ -31,7 +31,7 @@ header{
 
 main{
     width: calc(100vw - 15.625rem);
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 4.375rem);
     background-color: #141922;
     overflow-y: auto;
 }
@@ -311,7 +311,7 @@ aside{
     display: flex;
     flex-direction: column;
     width: 15.625rem;
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 4.375rem);
     padding-top: .9375rem;
     padding-left: .9375rem;
     overflow-y: hidden;
@@ -513,11 +513,9 @@ footer{
     right: 0;
     bottom: 0;
     width: 100vw;
-    height: 5rem;
+    height: 4.375rem;
     z-index: 100;
-    /* DEBUG */
-    background-color: bisque;
-    /* DEBUG */
+    background-color: #282828;
 }
 
  /*---------------
