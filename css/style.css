@@ -33,30 +33,37 @@ main{
     width: calc(100vw - 15.625rem);
     height: calc(100vh - 5rem);
     background-color: #141922;
+    overflow-y: auto;
 }
 
 .main-container{
     width: 98%;
     margin: auto;
-    margin-top: 6.25rem;
+    margin-top: 4.6875rem;
 }
 
 /* Main Navigator */
 
 .main-nav{
-    max-width: 50%;
+    max-width: 100%;
     margin: auto;
 }
 
 .main-nav-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     font-size: .9375rem;
     padding-right: 1.5625rem;
     list-style: none;
     color: #7d7f84;
     cursor: pointer;
+}
+
+.main-nav-text{
+    padding-right: .9375rem;
+    padding-top: 1.5625rem;
 }
 
 /* /Main Navigator */
@@ -75,13 +82,18 @@ main{
 }
 
 .played-col{
-    width: calc(95% / 6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(96% / 6);
     text-align: center;
 }
 
 .played-img{
     width: 100%;
+    height: 75%;
     display: block;
+    object-fit: cover;
     padding-bottom: .625rem;
 }
 
@@ -94,7 +106,51 @@ main{
     color: #7d7f84;
 }
 
+/* Responsive Desktop Recently Played(<= 1100px) */
+
+@media screen and (max-width: 1100px) {
+
+    .played-row{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .played-col{
+        width: calc(96% / 4);
+        padding-top: .9375rem;
+    }
+
+    .played-img{
+        width: 95%;
+        height: 75%;
+    }
+}
+
+/* Responsive Tablet Recently Played(<= 700px) */
+
+@media screen and (max-width: 700px) {
+    .played-main-title{
+        padding-left: 1.5625rem;
+    }
+
+    .played-col{
+        width: calc(96% / 2);
+        padding-top: .9375rem;
+    }
+
+    .played-img{
+        width: 80%;
+        height: 60%;
+    }
+}
+
 /* /Recently played section */
+
+/* For You section */
+
+
+
+/* /For You section *
 
 /*---------------- /Main -------------*/
 
@@ -200,6 +256,11 @@ nav{
     color: #717171;
 }
 
+.install-app{
+    display: flex;
+    align-items: center;
+}
+
 .aside-foot-icon{
     border: .0625rem solid #717171;
     border-radius: 1.5625rem;
@@ -246,6 +307,7 @@ nav{
 
     aside{
         width: 3.125rem;
+        padding-left: .625rem;
     }
 
     .logo-big{
@@ -271,7 +333,15 @@ nav{
         display: none;
     }
 
-    .aside-footer{
+    .download-text{
+        display: none;
+    }
+
+    .divider{
+        display: none;
+    }
+
+    .account-name{
         display: none;
     }
 }
