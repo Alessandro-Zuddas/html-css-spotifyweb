@@ -236,7 +236,7 @@
         <footer>
             <div class="footer-row">
                 <!-- Footer Left -->
-                <div class="footer-col-small">
+                <div class="footer-col-small footer-left">
                     <div class="current-song-preview">
                         <img class="current-song-img" src="img/sinister.jpeg" alt="Current Song">
                         <div class="current-song-desc">
@@ -253,13 +253,37 @@
 
                 <!-- Footer Center -->
                 <div class="footer-col-big">
-
+                    <!-- Media Player -->
+                    <div class="col-big-top">
+                        <i class="fa-solid fa-shuffle shuffle-icon"></i>
+                        <i class="fa-solid fa-backward-step backward-icon"></i>
+                        <i id="play-icon" class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step forward-icon"></i>
+                        <i class="fa-solid fa-rotate-right repeat-icon"></i>
+                    </div>
+                    <!-- /Media Player -->
+                    <!-- Song Time -->
+                    <div class="col-big-bottom">
+                        <small class="song-time past">0:25</small>
+                        <span class="slider-container">
+                            <input class="song-slider" type="slider">
+                            <input class="song-current-time" type="slider">
+                        </span>
+                        <small class="song-time remain">4:35</small>
+                    </div>
+                    <!-- /Song Time -->
                 </div>
                 <!-- /Footer Center -->
 
                 <!-- Footer Right -->
-                <div class="footer-col-small">
-
+                <div class="footer-col-small footer-right">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <span class="foot-right-slider-container">
+                        <input class="foot-right-slider" type="slider">
+                        <input class="foot-right-time" type="slider">
+                    </span>
                 </div>
                 <!-- /Footer Right -->
             </div>

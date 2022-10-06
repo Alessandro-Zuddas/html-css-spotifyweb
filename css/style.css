@@ -257,7 +257,7 @@ main{
 
 .popular-img{
     width: 100%;
-    height: 75%;
+    height: 100%;
     display: block;
     object-fit: cover;
     aspect-ratio: 1;
@@ -284,7 +284,7 @@ main{
 
     .popular-img{
         width: 100%;
-        height: 75%;
+        height: 100%;
     }
 }
 
@@ -297,7 +297,7 @@ main{
 
     .popular-img{
         width: 80%;
-        height: 60%;
+        height: 100%;
     }
 }
 
@@ -530,7 +530,26 @@ footer{
 }
 
 .footer-col-big{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 65%;
+}
+
+.col-big-top{
+    display: flex;
+    color: white;
+    margin-top: .625rem;
+    margin-left: 1.25rem;
+}
+
+.col-big-top > i {
+    padding-right: 1.5625rem;
+}
+
+.col-big-bottom{
+    display: flex;
+    padding-top: .3125rem;
 }
 
 .current-song-preview{
@@ -572,9 +591,88 @@ footer{
     padding-right: .9375rem;
 }
 
-/* Responsive Tablet Popular artist(<= 700px) */
+.shuffle-icon, .backward-icon, .forward-icon, .repeat-icon{
+    padding-top: .375rem;
+}
+
+#play-icon{
+    font-size: 1.5625rem;
+}
+
+.song-time{
+    font-size: .75rem;
+    padding-top: .25rem;
+    color: white;
+}
+
+.past{
+    padding-right: .9375rem;
+}
+
+.remain{
+    padding-left: .9375rem;
+}
+
+.slider-container{
+    position: relative;
+}
+
+.song-slider{
+    width: 25rem;
+    height: .3125rem;
+    background-color: grey;
+}
+
+.song-current-time{
+    position: absolute;
+    left: 0;
+    bottom: .3125rem;
+    width: 6.25rem;
+    height: .3125rem;
+}
+
+.footer-right{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: .625rem;
+    align-items: center;
+}
+
+.footer-right > i{
+    padding-right: .8125rem;
+}
+
+.foot-right-slider-container{
+    position: relative;
+}
+
+.foot-right-slider{
+    width: 9.375rem;
+    height: .3125rem;
+    background-color: grey;
+}
+
+.foot-right-time{
+    position: absolute;
+    left: 0;
+    bottom: .3125rem;
+    width: 4.6875rem;
+    height: .3125rem;
+}
+
+/* Responsive Desktop Footer(<= 1100px) */
+
+@media screen and (max-width: 1100px) {
+    .current-song-desc{
+        padding-top: 0;
+    }
+}
+
+/* Responsive Tablet Footer(<= 700px) */
 
 @media screen and (max-width: 700px) {
+
     .wish-playlist{
         flex-direction: column;
     }
@@ -586,6 +684,56 @@ footer{
     .wish-icon{
         padding-right: 0;
         padding-bottom: .625rem;
+    }
+
+    .song-slider{
+        width: 12.5rem;
+    }
+    
+    .song-current-time{
+        width: 3.125rem;
+    }
+
+    .footer-right{
+        margin-right: 1.25rem;
+    }
+
+    .footer-right > i{
+        font-size: small;
+    }
+
+    .foot-right-slider{
+        width: 3.125rem;
+    }
+    
+    .foot-right-time{
+        width: 1.5625rem;
+    }
+
+}
+
+/* Responsive Mobile Footer (<= 600px) */
+
+@media screen and (max-width: 600px){
+    .col-big-top{
+        font-size: small;
+        padding-left: 2.5rem;
+    }
+
+    .col-big-bottom{
+        padding-left: 2.5rem;
+    }
+
+    .song-slider{
+        width: 6.25rem;
+    }
+    
+    .song-current-time{
+        width: 1.5625rem;
+    }
+
+    .footer-right{
+        margin-right: 2.5rem;
     }
 }
 
