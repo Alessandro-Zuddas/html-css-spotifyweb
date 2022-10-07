@@ -162,6 +162,10 @@ main{
         width: 95%;
         height: 75%;
     }
+
+    .img-hover-effect{
+        height: 70%;
+    }
 }
 
 /* Responsive Tablet Recently Played(<= 700px) */
@@ -179,6 +183,17 @@ main{
     .played-img{
         width: 80%;
         height: 60%;
+    }
+
+    .img-hover-effect{
+        width: 80%;
+        height: 55%;
+    }
+
+    .play-icon-hover{
+        left: 35%;
+        top: 35%;
+        transform: translate(-50% -50%);
     }
 }
 
@@ -688,6 +703,10 @@ footer{
     padding-right: .9375rem;
 }
 
+.wish-icon, .wish-icon-two{
+    z-index: 10;
+}
+
 .shuffle-icon, .backward-icon, .forward-icon, .repeat-icon{
     padding-top: .375rem;
 }
@@ -718,6 +737,7 @@ footer{
     width: 25rem;
     height: .3125rem;
     background-color: grey;
+    z-index: 5;
 }
 
 .song-current-time{
@@ -726,6 +746,13 @@ footer{
     bottom: .3125rem;
     width: 6.25rem;
     height: .3125rem;
+}
+
+.volume-control{
+    position: absolute;
+    left: 23%;
+    top: 8%;
+    opacity: 0;
 }
 
 .footer-right{
@@ -758,6 +785,13 @@ footer{
     height: .3125rem;
 }
 
+.audio-control{
+    position: absolute;
+    left: 40%;
+    top: 8%;
+    opacity: 0;
+}
+
 #play-icon:hover{
     transform: scale(1.1);
     cursor: pointer;
@@ -772,6 +806,24 @@ footer{
 .wish-icon:hover, .wish-icon-two:hover{
     color: white;
     cursor: pointer;
+}
+
+.volume-control:hover{
+    opacity: 1;
+}
+
+.song-current-time:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.foot-right-time:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.audio-control:hover{
+    opacity: 1;
 }
 
 /* Responsive Desktop Footer(<= 1100px) */
