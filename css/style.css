@@ -487,6 +487,10 @@ nav{
         display: none;
     }
 
+    .playlist-container{
+        display: none;
+    }
+
     .download-text{
         display: none;
     }
@@ -686,9 +690,6 @@ footer{
 
     .wish-playlist{
         flex-direction: column;
-    }
-
-    .wish-playlist{
         justify-content: center;
     }
 
@@ -733,6 +734,10 @@ footer{
 
     .col-big-bottom{
         padding-left: 2.5rem;
+    }
+
+    .wish-playlist{
+        margin-left: .9375rem;
     }
 
     .footer-right{
