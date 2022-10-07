@@ -667,6 +667,14 @@ footer{
     .current-song-desc{
         padding-top: 0;
     }
+
+    .song-slider{
+        width: 12.5rem;
+    }
+    
+    .song-current-time{
+        width: 3.125rem;
+    }
 }
 
 /* Responsive Tablet Footer(<= 700px) */
@@ -687,11 +695,11 @@ footer{
     }
 
     .song-slider{
-        width: 12.5rem;
+        width: 6.25rem;
     }
     
     .song-current-time{
-        width: 3.125rem;
+        width: 1.5625rem;
     }
 
     .footer-right{
