@@ -9,6 +9,11 @@
     border-radius: 1.25rem;
     padding: .625rem 1.25rem;
     margin-right: 1.25rem;
+    cursor: pointer;
+}
+
+.header-btn:hover{
+    transform: scale(1.1);
 }
 
  /*---------------

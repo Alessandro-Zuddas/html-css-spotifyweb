@@ -355,6 +355,22 @@ nav{
 
 .nav-links{
     text-decoration: none;
+    color: #7d7f84;
+}
+
+.home{
+    color: white;
+}
+
+.home-img{
+    border-left: .1875rem solid lightgreen;
+}
+
+.nav-links:hover{
+    color: white;
+}
+
+.home, .home-img, .nav-img:hover{
     color: white;
 }
 
@@ -380,7 +396,7 @@ nav{
 }
 
 .new-playlist-text{
-    color: white;
+    color: #7d7f84;
     padding-left: .625rem;
 }
 
@@ -392,8 +408,17 @@ nav{
 }
 
 .playlist-name{
-    color: white;
+    color: #7d7f84;
     padding-bottom: 1.25rem;
+}
+
+.new-playlist-text:hover{
+    color: white;
+}
+
+.playlist-name:hover{
+    color: white;
+    cursor: pointer;
 }
 
 /* /Playlist Section */
