@@ -387,6 +387,8 @@ nav{
 .playlist-container{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .playlist-name{
