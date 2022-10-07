@@ -413,10 +413,11 @@ nav{
 }
 
 .aside-foot-icon{
+    font-size: .625rem;
     border: .0625rem solid #717171;
     border-radius: 1.5625rem;
     padding: .3125rem .3125rem;
-    margin: 0 .3125rem;
+    margin: 0 .4375rem;
     margin-bottom: .125rem;
 }
 
