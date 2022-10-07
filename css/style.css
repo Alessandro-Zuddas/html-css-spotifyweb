@@ -66,6 +66,15 @@ main{
     padding-top: 1.5625rem;
 }
 
+.selected-nav-text{
+    border-bottom: .125rem solid lightgreen;
+}
+
+.main-nav-text:hover{
+    color: white;
+    cursor: pointer;
+}
+
 /* Responsive Tablet Main Nav(<= 700px) */
 @media screen and (max-width: 700px) {
     .main-nav-list{
@@ -89,6 +98,7 @@ main{
 }
 
 .played-col{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,6 +121,27 @@ main{
 
 .played-text{
     color: #7d7f84;
+}
+
+.img-hover-effect{
+    position: absolute;
+    width: 100%;
+    height: 72%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+.play-icon-hover{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    transform: translate(-50% -50%);
+    color: white;
+    font-size: 3.125rem;
+}
+
+.img-hover-effect:hover{
+    opacity: 1;
 }
 
 /* Responsive Desktop Recently Played(<= 1100px) */
@@ -173,6 +204,7 @@ main{
 }
 
 .for-you-col{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,6 +225,7 @@ main{
     color: white;
     padding-bottom: .3125rem;
 }
+
 
 /* Responsive Desktop For You (<= 1100px) */
 
@@ -247,6 +280,7 @@ main{
 }
 
 .popular-col{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,6 +302,28 @@ main{
 .popular-title{
     color: white;
     padding-bottom: .3125rem;
+}
+
+.img-hover-effect-popular{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    border-radius: 1.5625rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+.play-icon-hover-popular{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    transform: translate(-50% -50%);
+    color: white;
+    font-size: 3.125rem;
+}
+
+.img-hover-effect-popular:hover{
+    opacity: 1;
 }
 
 /* Responsive Desktop Popular artist(<= 1100px) */
@@ -466,6 +522,11 @@ nav{
 .account-name{
     padding-top: .3125rem;
     padding-left: .625rem;
+    color: white;
+    cursor: pointer;
+}
+
+.install-app:hover{
     color: white;
     cursor: pointer;
 }
@@ -695,6 +756,22 @@ footer{
     bottom: .3125rem;
     width: 4.6875rem;
     height: .3125rem;
+}
+
+#play-icon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.current-song-author:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.wish-icon:hover, .wish-icon-two:hover{
+    color: white;
+    cursor: pointer;
 }
 
 /* Responsive Desktop Footer(<= 1100px) */
